@@ -10,3 +10,20 @@ def regex_search(pat, string, area='start'):
         return m[1]
     elif area == 'all':
         return m
+
+def get_decimals_from_string(string):
+    num_i = ''
+    point = True
+    lst = []
+    for c in string:
+        if c.isnumeric():
+            num_i += c
+        elif c == '.':
+            if point:
+                num_i += c
+            point = not point
+        else:
+            if len(num_i) > 0:
+                lst.append(float(num_i))
+                num_i = ''
+    return lst
