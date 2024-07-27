@@ -16,3 +16,4 @@ Converts knitting pattern PDFs into lists of stitches/row and a count of remaini
   - Create code to eliminate any filler text.
   - Create code to match our gold format.
   - Create code to parse the pattern string.
+  - Added functionality to parse gauge.
