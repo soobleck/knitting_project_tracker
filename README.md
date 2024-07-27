@@ -3,6 +3,7 @@ Converts knitting pattern PDFs into lists of stitches/row and a count of remaini
 
 # To Do:
   - Create code to get number of stitches (total, remaining, already completed).
+  - Create child classes of Pattern for Hats, Scarves, Sweaters, etc.
   - Source a simple knitting pattern with different sizes (hat?).
   - Create code to modify size as user input.
   - Create code to parse knitting charts.
