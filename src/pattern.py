@@ -1,5 +1,5 @@
 from pypdf import PdfReader
-from .utils import *
+from utils import *
 
 class Pattern:
     def __init__(self, fpath):
@@ -18,7 +18,7 @@ class Pattern:
 
         # TODO: this assumes a square gauge measure. Is this standard?
         try:
-            i,j = regex_search('[0-9]+(\.[0-9]+)?\s?ST(S)?.+[0-9]+(\.[0-9]+)?\s?R.*[0-9]+\s?(IN|CM)', lines, 'all')
+            i,j = regex_search('[0-9]+(\.[0-9]+)?\s?ST(S)?.+[0-9]+(\.[0-9]+)?\s?R.*[0-9]+\s?(\”|\"|IN|CM)', lines, 'all')
         except:
             i,j = regex_search('[0-9]+(\.[0-9]+)?\s?(S|R).*[0-9]+\s?(\”|\"|IN|CM)', lines, 'all')
         gauge = lines[i:j]
