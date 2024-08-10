@@ -1,3 +1,3 @@
-from src.pattern import *
-from src.scarf import *
-from src.utils import *
+from tracker.pattern import *
+from tracker.scarf import *
+from tracker.utils import *
